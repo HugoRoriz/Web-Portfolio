@@ -17,7 +17,7 @@ export class IntroComponent implements OnInit {
   name: String;
   language: String;
 
-  constructor(private translate: TranslateService, private router: Router, private dataService: DataService) { }
+  constructor(public translate: TranslateService, private router: Router, private dataService: DataService) { }
 
   ngOnInit() {
     $('#socialContainer').addClass('invisible');

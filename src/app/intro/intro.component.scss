@@ -8,8 +8,9 @@
 }
 
 .devMessage {
-	position: absolute;
+  position: absolute;
   width: 10%;
+  font-family: $font;
   color: $orange;
 	text-align: center;
 	margin: 20px;
