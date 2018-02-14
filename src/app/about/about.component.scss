@@ -1,0 +1,55 @@
+@import '../../stylesheets/variables.scss';
+
+#aboutArrow {margin-top: 80px;}
+
+.aboutPage {font-family: $font}
+
+.aboutName {margin: 150px 0 20px 0;}
+
+.aboutImg {background-image: url("../../assets/about.png");}
+
+.aboutMeContainer {height: 45vh;}
+
+.aboutMeTitle {margin-top: 150px}
+
+.aboutMePhotoContainer {
+  width: 32%;
+	height: 22vh;
+	float: left;
+  text-align: center;
+  border-radius: 100%;
+  margin: 3vh 0;
+	padding-left: 190px;
+}
+
+.aboutMePhoto {
+  height: 160px;
+  background-image: url("../../assets/photo.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 100%;
+	border: 2px solid $grey-dark;
+	box-shadow: -5px -3px $grey-light;
+}
+
+.aboutMeDetailsContainer {
+  width: 55%;
+  float: right;
+}
+
+.aboutMeDetailsItem {
+  list-style: none;
+  text-align: left;
+  margin: 20px 0;
+ }
+
+.info {
+  color: $orange;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.aboutSummaryTitle {margin-top: 100px;}
+
+.aboutSummaryParagraph {margin: 0 100px 30px 100px;}
