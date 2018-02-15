@@ -1,0 +1,54 @@
+@import '../../stylesheets/variables.scss';
+
+.header {
+  position: fixed;
+	top: 0;
+  left: 50%;
+	transform: translateX(-50%);
+  font-family: $font;
+  background-color: $background;
+  z-index: 100;
+}
+
+.headerDescriptionContainer {
+  float: left;
+  padding: 0 0 0 30px;
+}
+
+.headerName {
+  font-size: 18px;
+  color: $orange;
+  margin: 15px 0 0 0;
+}
+
+.headerJob {
+  font-size: 14px;
+  color: $grey-dark;
+  margin: 0;
+}
+
+.linkListContainer {
+  color: $grey-dark;
+  float: right;
+  margin-top: 18px;
+  padding: 0;
+}
+
+.linkList {
+  float: right;
+  display: inline-flex;
+  padding: 0;
+}
+
+.links {
+  height: 30px;
+  font-size: 18px;
+  list-style: none;
+  margin: 0 40px 10px 0; 
+}
+
+.headerSectionSeparator {
+  border-bottom: 1px solid $grey-light;
+	width: 100%;
+	margin-top: 60px;
+}

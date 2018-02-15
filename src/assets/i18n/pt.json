@@ -1,0 +1,58 @@
+{
+  "HEADER": {
+    "ABOUT": "Sobre Mim",
+    "SKILLS": "Competências",
+    "EXP": "Experiência",
+    "PET-PROJECTS": "Projetos Pessoais",
+    "BLOG": "Blog"
+  },
+  "INTRO": {
+    "DEV": "Em desevolvimento, não testado em todos os dispositivos e browsers",
+    "TITLE": "Olá ! Introduz o teu nome para me dirigir a ti melhor",
+    "PLACEHOLDER": "NOME",
+    "DISCLOSURE": "*Isto é apenas para motivos de entretenimento",
+    "WARNING": "Esqueceste-te de escrever o teu nome !",
+    "NO-THANKS": "Não, obrigado !"
+  },
+  "ABOUT": {
+    "WELCOME": "Bem-vindo ao meu Portfolio !",
+    "ME-TITLE": "Sobre Mim",
+    "ME-ITEM-1": "Hugo José Roriz da Silva Lopes",
+    "ME-ITEM-2": "24 anos, Português",
+    "ME-ITEM-3": "Front-End Developer",
+    "ME-ITEM-4": "hugororiz93@gmail.com",
+    "SUMMARY": "Sumário",
+    "SECTION-1": "Olá ! Obrigado por visitar o meu portfolio !",
+    "SECTION-2": "O meu nome é Hugo Roriz e sou um Front-End Web Developer .",
+    "SECTION-3": "Sempre fui um \"bocado\" gamer (desde que aos 4 anos o meu pai me deu o comando para a mão pela primeira ves) e é daí que vem a minha paixão por programação . Tornar-me um Game Developer e contruir jogos é um dos meus planos a longo prazo . Acabei o secundário e candidatei-me a Engenharia de Informática na Universidade do Minho . Não sabia praticamente nada sobre sobre programação, nem computadores . Depois de frequentar o curso durante 2 anos e sem sentir bem comigo próprio, acabei por desistir . Alguns anos depois decidi começar a aprender Desenvolvimento Web e voltar ao caminho !",
+    "SECTION-4": "No início de 2017 comecei a aprender Desenvolvimento Web, começando por video-tutoriais e cursos online, aprendendo os básico (a partir de recursos como Coursera/CodeAcademy/FreeCodeCamp/OdinProject e tirando dúvidas por vezes a amigos que conheci durante o curso) .",
+    "SECTION-5": "Alguns meses depois inscrevi-me no curso de Front-End & Responsive Web Development na EDIT. - Disruptive Digital Education, uma escola especializada em educação digital no Porto, Portugal . Mesmo sendo o curso focado em tecnologias Front-End, também tivemos sessões de boas práticas de design (e metodologias de trabalho como SCRUM) e ainda \"brincamos\" um pouco com Photoshop e Sketch para construir uma mockup e criar personas para um conceito de site . No lado do código trabalhei com HTML, CSS/SASS, JavaScript/JQuery e a framework AngularJS . O curso terminou com o 360º Digital Campaign que consistia em 6 equipas compostas de 14 elementos dos vários cursos oferecidos pela escola (UI/UX Designers, Digital Interaction Designers, Digital & Strategy Marketeers, Front-End Developers and a Digital Account & Project Manager), trabalhando em conjunto durante 3 semanas para aumentar awareness para uma marca real, e como objetivo fazer um rebranding á marca (incluindo contato direto com representantes da marca) .",
+    "SECTION-6": "Depois desse desafio continuei a estudar e comecei este projeto . De momento, há pouco conteúdo no portfolio, a minha intenção é de continuar a lançar updates, com o tempo, não só com experiência profissional (quando adquirida) mas também com projetos pessoais que possa vir a construir no meu tempo livre, e também alguns posts no meu blog com tutoriais ou tópicos relacionados com Desenvolvimento Web !",
+    "SECTION-7": "Neste momento procuro primeiro emprego, por isso se achar que tem a oportunidade perfeita para mim não hesite em me contactar ! Até lá, provavelmente estarei a construir alguns projetos pessoais para prática e entretenimento, e, quem sabe, até construir o meu primeiro \"jogo\" !",
+    "SECTION-8": "De qualquer forma e mais uma vez, obrigado por tirar tmepo para dar uma vista de olhos pelo meu portfolio !"
+  },
+  "EXP": {
+    "WORK-TITLE": "Experiência Profissional",
+    "WORK-SUBTITLE": "De momento não tenho experiência profissional, mas será adicionada futuramente !",
+    "EXTRA-TITLE": "Extra Curricular",
+    "EXTRA-ITEM-1": "2 anos como jogador federado de futebol ;",
+    "EXTRA-ITEM-2": "5 anos como jogador federado de basquetebol .",
+    "VOLUNTEER-TITLE": "Experiência Voluntariado",
+    "VOLUNTEER-SUBTITLE": "2 anos de voluntariado no canil da ABRA ."
+  },
+  "SKILLS": {
+    "TITLE": "Competências",
+    "HTML": "Entendimento sólido de HTML",
+    "CSS": "Entendimento sólido de CSS, competente com frameworks/livrarias como Bootstrap, SASS/LESS",
+    "JS": "Entendimento sólido de JS, competente com frameworks/livrarias como jQuery, Angular, Meteor",
+    "TECH": "Tecnologias"
+  },
+  "BLOG": {
+    "TITLE": "Blog",
+    "SUBTITLE": "De momento não tenho posts, serão adicionados futuramente !"
+  },
+  "PET-PROJECTS": {
+    "TITLE": "Projetos Pessoais",
+    "SUBTITLE": "De momento não tenho projetos pessoais, mas serão adicionados futuramente !"
+  }
+}
