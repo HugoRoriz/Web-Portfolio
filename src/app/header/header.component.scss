@@ -1,54 +1,49 @@
 @import '../../stylesheets/variables.scss';
 
 .header {
-  position: fixed;
-	top: 0;
-  left: 50%;
-	transform: translateX(-50%);
   font-family: $font;
-  background-color: $background;
-  z-index: 100;
+  position: fixed;
+  height: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background-image: url("/assets/concrete_seamless.png");
 }
 
-.headerDescriptionContainer {
-  float: left;
-  padding: 0 0 0 30px;
+.lang-select-container {
+  width: 115px;
+	height: 30px;
+	position: absolute;
+	top: 10px;
+	padding: 0 10px;
+	background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 89% 0;
+	background-color: #D4AF37;
+	overflow: hidden;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  select {
+    height: 30px;
+    width: 105px;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    padding: 8px 0;
+    color: white;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
 }
 
-.headerName {
-  font-size: 18px;
-  color: $orange;
-  margin: 15px 0 0 0;
+.nav-container {
+  width: 35%;
+	margin: 15px auto;
 }
 
-.headerJob {
-  font-size: 14px;
-  color: $grey-dark;
-  margin: 0;
+.header-link {
+  height: 25px;
+  margin: 0 10px;
 }
 
-.linkListContainer {
-  color: $grey-dark;
-  float: right;
-  margin-top: 18px;
-  padding: 0;
-}
-
-.linkList {
-  float: right;
-  display: inline-flex;
-  padding: 0;
-}
-
-.links {
-  height: 30px;
-  font-size: 18px;
-  list-style: none;
-  margin: 0 40px 10px 0; 
-}
-
-.headerSectionSeparator {
-  border-bottom: 1px solid $grey-light;
-	width: 100%;
-	margin-top: 60px;
-}
+.is-selected {color: $gold;}

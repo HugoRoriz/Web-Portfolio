@@ -1,0 +1,57 @@
+{
+  "HEADER": {
+    "ABOUT": "About",
+    "TIMELINE": "Timeline",
+    "PROJECTS": "Projects",
+    "RESUME": "Résumé",
+    "CONTACTS": "Contacts"
+  },
+  "WELCOME": {
+    "TITLE": "HI! I'M HUGO",
+    "SUBTITLE": "a web developer"
+  },
+  "ABOUT": {
+    "TITLE": "ABOUT",
+    "TEXT-1": "I'm a 24-year-old Web Developer currently residing in Braga, Portugal, looking for my first job!",
+    "TEXT-2": "Passionate about problem solving, coding and video games!",
+    "QUOTE-1": "\"We all make choices in life, but in the end our choices make us.\"",
+    "QUOTE-2": "Andrew Ryan, Bioshock"
+  },
+  "TIMELINE": {
+    "TITLE": "TIMELINE",
+    "THUMBNAIL-1": "2012 - 2013",
+    "TITLE-1": "Masters in Communications Engineering",
+    "SUBTITLE-1": "University of Minho",
+    "THUMBNAIL-2": "2013 - 2014",
+    "TITLE-2": "Masters in Computer Science",
+    "SUBTITLE-2": "University of Minho",
+    "THUMBNAIL-3": "2017",
+    "TITLE-3": "Front-End & Responsive Web Design Course",
+    "SUBTITLE-3": "EDIT. - Disruptive Digital Education"
+  },
+  "PROJECTS": {
+    "TITLE": "PROJECTS",
+    "SUBTITLE-1": "APPS",
+    "SUBTITLE-2": "GAMES",
+    "SUBTITLE-3": "Check out my repositories & pens!"
+  },
+  "RESUME": {
+    "TITLE": "RÉSUMÉ",
+    "PT": "Portuguese",
+    "EN": "English"
+  },
+  "CONTACTS": {
+    "TITLE": "CONTACTS"
+  },
+  "SOCIAL": {
+    "TITLE": "SOCIALS"
+  },
+  "GENERAL": {
+    "NAME": "Hugo Roriz",
+    "EMAIL": "hugororiz93@gmail.com",
+    "IN-DEV": "( In Development :p )",
+    "CODEPEN": "codepen.io/hugororiz",
+    "GITHUB": "github.com/HugoRoriz",
+    "THANKS": "Thank you for visiting my website! "
+  }
+}

@@ -6,7 +6,6 @@ export class DataService {
 
   constructor() { }
 
-  name: String = 'Incognito';
   language: String = 'en';
 
 }

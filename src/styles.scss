@@ -1,14 +1,47 @@
 // STYLESHEET IMPORT
 
 @import '~bootstrap/dist/css/bootstrap.min.css';
-@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
 @import './stylesheets/variables.scss';
 @import './stylesheets/animate.css';
+
+// FONTS
+
+@font-face {
+  font-family: 'Calibri';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Calibri Italic'), local('Calibri-Italic'), url(https://fonts.gstatic.com/l/font?kit=J7adnpV-BGlaFfdAhLQo6btPMDoTpA&skey=36a3d5758e0e2f58&v=v8) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Calibri';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Calibri Bold Italic'), local('Calibri-BoldItalic'), url(https://fonts.gstatic.com/l/font?kit=J7aYnpV-BGlaFfdAhLQgUp5aHRgejiMIKQ&skey=8b00183e5f6700b6&v=v8) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Calibri'), url(https://fonts.gstatic.com/l/font?kit=J7afnpV-BGlaFfdAhLEY67FIEjg&skey=a1029226f80653a8&v=v8) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Calibri Bold'), local('Calibri-Bold'), url(https://fonts.gstatic.com/l/font?kit=J7aanpV-BGlaFfdAjAo9_pxqHxIZrCE&skey=cd2dd6afe6bf0eb2&v=v8) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 // RESET CSS
 
 *:focus {
-  font-family: 'Josefin Slab', serif;
+  font-family: $font;
   outline: none !important;
 }
 
@@ -20,23 +53,9 @@ html {
 }
 
 body {
-  background-color: $background;
+  background-image: url("assets/concrete_seamless.png");
   margin: 0;
-}
-
-body,
-#aboutPage,
-#blogPage,
-#expPage,
-#introPage,
-#petProjectsPage,
-#skillsPage,
-#socialContainer {
-  -webkit-animation: fadeIn 3s;
-  -moz-animation: fadeIn 3s;
-  -ms-animation: fadeIn 3s;
-  -o-animation: fadeIn 3s;
-  animation: fadeIn 3s;
+  padding: 0;
 }
 
 article,
@@ -73,7 +92,10 @@ a {
   -webkit-text-decoration-skip: objects;
   text-decoration: none;
   color: inherit;
-  &:hover {text-decoration: none !important;}
+  &:hover {
+    text-decoration: none !important;
+    color: $grey;
+  }
 }
 
 ol {
@@ -85,7 +107,7 @@ ol {
 ul,
 li {
   padding: 0;
-  cursor: pointer;
+  cursor: default;
 }
 
 abbr[title] {
@@ -140,7 +162,7 @@ img {border-style: none;}
 
 svg:not(:root) {overflow: hidden;}
 
-button:hover {text-decoration: none !important;}
+button:hover {text-decoration: none;}
 
 button,
 input,
@@ -231,96 +253,34 @@ template {display: none;}
 
 .no-padding {padding: 0 !important;}
 
-.isSelected {border-bottom: 1px solid $orange !important;}
-
-.langIsSelected {
-  background-color: $orange !important;
-  color: white !important;
-  border: 1px solid $orange !important;
-}
-
 .display {display: initial !important;}
 
 .invisible {display: none !important;}
 
-.arrow {
-	width: 100%;
-	color: $grey-dark;
-	text-align: center;
-	margin-top: 10px;
+.left-break {
+  height: 300px;
+  width: 50%;
+  float: left;
+  border-right: 1px solid $gold;
 }
 
-.langSelect {
-  font-size: 30px;
-  color: $orange;
-  background-color: transparent;
-  border: none;
-  text-align: center;
-  margin: 20px auto;
+.right-break {
+  height: 300px;
+  width: 50%;
+  float: right;
+  border-left: 2px solid $gold;
 }
 
-.sectionSeparator {
-  border-bottom: 1px solid $grey-light;
-	width: 80%;
-	margin: 0 auto 50px auto;
+.section-break {height: 300px;}
+
+#about,
+#timeline,
+#projects,
+#contacts,
+#resume {
+  padding-top: 100px;
+  margin-top: -50px;
 }
-
-.image {
-  height: 60vh;
-	background-size: cover;
-	background-repeat: no-repeat;
-	margin: 0 100px;
-}
-
-.title {
-  color: $orange;
-	font-size: 40px;
-  text-align: center;
-}
-
-.subtitle {
-  color: $grey-dark;
-	text-align: center;
-	font-size: 20px;
-}
-
-.socialContainer {
-  position: fixed;
-  display: inline-grid;
-  top: 40vh;
-  left: 0;
-}
-
-.social {
-  width: 50px;
-	height: 50px;
-	color: $background;
-	padding: 10px 13px;
-  margin-bottom: 10px;
-  &:hover {width: 200px;}
-}
-
-.socialTwitter,
-.socialLinkedin,
-.socialGithub {
-  font-family: $font;
-  position: absolute;
-	left: 80px;
-	font-size: 25px;
-	color: $background;
-}
-
-.socialTwitter {top: 8px;}
-
-.socialLinkedin {top: 69px}
-
-.socialGithub {top: 129px;}
-
-.twitter {background-color: $twitter;}
-
-.linked-in {background-color: $linked-in;}
-
-.github {background-color: $github;}
 
 // ANIMATIONS
 
@@ -340,7 +300,7 @@ template {display: none;}
   animation: bounce 1.5s infinite;
 }
 
-.animation_fadeIn {
+.animation-fadeIn {
   -webkit-animation: fadeIn 3s;
   -moz-animation: fadeIn 3s;
   -ms-animation: fadeIn 3s;
@@ -348,7 +308,7 @@ template {display: none;}
   animation: fadeIn 3s;
 }
 
-.animation_hover_flipInX:hover {
+.animation-hover-flipInX:hover {
   -webkit-animation: flipInX 1s;
   -moz-animation: flipInX 1s;
   -ms-animation: flipInX 1s;

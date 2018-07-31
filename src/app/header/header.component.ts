@@ -14,50 +14,71 @@ export class HeaderComponent implements OnInit {
 
   constructor(private translate: TranslateService, private dataService: DataService) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    const sections = $('.section')
+    , nav = $('.nav')
+    , nav_height = nav.outerHeight();
 
-  changeToAbout() {
-    $('#about').addClass('isSelected');
+  $(window).on('scroll', function () {
+    const cur_pos = $(this).scrollTop();
 
-    $('#skills').removeClass('isSelected');
-    $('#exp').removeClass('isSelected');
-    $('#petProjects').removeClass('isSelected');
-    $('#blog').removeClass('isSelected');
+    sections.each(function() {
+      const top = $(this).offset().top - nav_height,
+          bottom = top + $(this).outerHeight();
+
+      if (cur_pos >= top && cur_pos <= bottom) {
+        nav.find('a').removeClass('is-selected');
+        sections.removeClass('is-selected');
+
+        $(this).addClass('is-selected');
+        nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('is-selected');
+      }
+    });
+  });
   }
 
-  changeToSkills() {
-    $('#skills').addClass('isSelected');
+  highlightAbout() {
+    $('#aboutLink').addClass('is-selected');
 
-    $('#about').removeClass('isSelected');
-    $('#exp').removeClass('isSelected');
-    $('#petProjects').removeClass('isSelected');
-    $('#blog').removeClass('isSelected');
+    $('#timelineLink').removeClass('is-selected');
+    $('#projectsLink').removeClass('is-selected');
+    $('#contactsLink').removeClass('is-selected');
+    $('#resumeLink').removeClass('is-selected');
   }
 
-  changeToExperience() {
-    $('#exp').addClass('isSelected');
+  highlightTimeline() {
+    $('#timelineLink').addClass('is-selected');
 
-    $('#skills').removeClass('isSelected');
-    $('#about').removeClass('isSelected');
-    $('#petProjects').removeClass('isSelected');
-    $('#blog').removeClass('isSelected');
+    $('#aboutLink').removeClass('is-selected');
+    $('#projectsLink').removeClass('is-selected');
+    $('#contactsLink').removeClass('is-selected');
+    $('#resumeLink').removeClass('is-selected');
   }
 
-  changeToPetProjects() {
-    $('#petProjects').addClass('isSelected');
+  highlightProjects() {
+    $('#projectsLink').addClass('is-selected');
 
-    $('#skills').removeClass('isSelected');
-    $('#exp').removeClass('isSelected');
-    $('#about').removeClass('isSelected');
-    $('#blog').removeClass('isSelected');
+    $('#timelineLink').removeClass('is-selected');
+    $('#aboutLink').removeClass('is-selected');
+    $('#contactsLink').removeClass('is-selected');
+    $('#resumeLink').removeClass('is-selected');
   }
 
-  changeToBlog() {
-    $('#blog').addClass('isSelected');
+  highlightContacts() {
+    $('#contactsLink').addClass('is-selected');
 
-    $('#skills').removeClass('isSelected');
-    $('#exp').removeClass('isSelected');
-    $('#petProjects').removeClass('isSelected');
-    $('#about').removeClass('isSelected');
+    $('#timelineLink').removeClass('is-selected');
+    $('#projectsLink').removeClass('is-selected');
+    $('#aboutLink').removeClass('is-selected');
+    $('#resumeLink').removeClass('is-selected');
+  }
+
+  highlightResume() {
+    $('#resumeLink').addClass('is-selected');
+
+    $('#timelineLink').removeClass('is-selected');
+    $('#projectsLink').removeClass('is-selected');
+    $('#contactsLink').removeClass('is-selected');
+    $('#aboutLink').removeClass('is-selected');
   }
 }
