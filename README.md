@@ -1,3 +1,3 @@
-# Prod Branch
+# Dev Branch
 
-Production branch for Hugo Roriz, Web Portfolio.
+Development branch for Hugo Roriz, Web Portfolio.

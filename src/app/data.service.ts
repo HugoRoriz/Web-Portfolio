@@ -4,9 +4,8 @@ import { Injectable } from '@angular/core';
 
 export class DataService {
 
-  constructor() { }
+  constructor() {}
 
-  name: String = 'Incognito';
   language: String = 'en';
 
 }

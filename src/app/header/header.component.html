@@ -1,32 +1,18 @@
-<div id="headerPage" class="header container">
-  <div class="col-sm-12 col-md-12 col-lg-12">
-    <div class="headerDescriptionContainer col-sm-2 col-md-2 col-lg-2">
-      <h1 class="headerName">Hugo Roriz</h1>
-      <p class="headerJob">Front-End Developer</p>
-    </div>
-    <div class="linkListContainer col-sm-10 col-md-10 col-lg-10">
-      <ul class="linkList">
-        <li id="about" class="links no-flicker animation_hover_flipInX" routerLink="../about" (click)="changeToAbout();">{{ 'HEADER.ABOUT' | translate }}</li>
-        <li id="skills" class="links no-flicker animation_hover_flipInX" routerLink="../skills" (click)="changeToSkills();">{{ 'HEADER.SKILLS' | translate}}</li>
-        <li id="exp" class="links no-flicker animation_hover_flipInX" routerLink="../experience" (click)="changeToExperience();">{{ 'HEADER.EXP' | translate }}</li>
-        <li id="petProjects" class="links no-flicker animation_hover_flipInX" routerLink="../pet-projects" (click)="changeToPetProjects();">{{ 'HEADER.PET-PROJECTS' | translate }}</li>
-        <li id="blog" class="links no-flicker animation_hover_flipInX" routerLink="../blog" (click)="changeToBlog();">{{ 'HEADER.BLOG' | translate }}</li>
-      </ul>
-    </div>
+<div id="header" class="header container">
+  <div class="lang-select-container">
+    <select id="langSelect" #langSelect (change)="translate.use(langSelect.value)">
+      <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
+    </select>
   </div>
-  <div class="headerSectionSeparator"></div>
-</div>
-<div id="socialContainer" class="socialContainer">
-  <a href="https://www.twitter.com/hjroriz">
-    <span class="fa fa-2x fa-twitter social twitter"></span>
-    <p class="socialTwitter">Twitter</p>
-  </a>
-  <a href="https://www.linkedin.com/in/hugororiz/">
-    <span class="fa fa-2x fa-linkedin social linked-in"></span>
-    <p class="socialLinkedin">LinkedIN</p>
-  </a>
-  <a href="https://www.github.com/HugoRoriz">
-    <span class="fa fa-2x fa-github social github"></span>
-    <p class="socialGithub">GitHub</p>
-  </a>
+  <nav class="nav-container">
+    <input type="checkbox" id="menu" name="menu">
+    <ul class="main navigation">
+      <li class="no-flicker animation-hover-flipInX" (click)="highlightAbout();"><a class="header-link" id="aboutLink" href="#about">{{ 'HEADER.ABOUT' | translate }}</a></li>
+      <li class="no-flicker animation-hover-flipInX" (click)="highlightTimeline();"><a class="header-link" id="timelineLink" href="#timeline">{{ 'HEADER.TIMELINE' | translate }}</a></li>
+      <li class="no-flicker animation-hover-flipInX" (click)="highlightProjects();"><a class="header-link" id="projectsLink" href="#projects">{{ 'HEADER.PROJECTS' | translate }}</a></li>
+      <li class="no-flicker animation-hover-flipInX" (click)="highlightResume();"><a class="header-link" id="resumeLink" href="#resume">{{ 'HEADER.RESUME' | translate }}</a></li>
+      <li class="no-flicker animation-hover-flipInX" (click)="highlightContacts();"><a class="header-link" id="contactsLink" href="#contacts">{{ 'HEADER.CONTACTS' | translate }}</a></li>
+    </ul>
+    <label for="menu" id="menu"></label>
+  </nav>
 </div>

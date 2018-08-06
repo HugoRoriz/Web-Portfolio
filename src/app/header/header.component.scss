@@ -1,54 +1,86 @@
 @import '../../stylesheets/variables.scss';
 
 .header {
-  position: fixed;
-	top: 0;
-  left: 50%;
-	transform: translateX(-50%);
   font-family: $font;
-  background-color: $background;
-  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background-image: url("/assets/concrete_seamless.png");
 }
 
-.headerDescriptionContainer {
-  float: left;
-  padding: 0 0 0 30px;
+.lang-select-container {
+  width: 115px;
+	height: 30px;
+  position: absolute;
+  z-index: 4;
+	top: 10px;
+	padding: 0 10px;
+	background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 89% 0;
+	background-color: $gold;
+	overflow: hidden;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  select {
+    height: 30px;
+    width: 105px;
+    background: transparent;
+    border: none;
+    font-size: 12px;
+    padding: 8px 0;
+    color: white;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
 }
 
-.headerName {
-  font-size: 18px;
-  color: $orange;
-  margin: 15px 0 0 0;
+.nav-container {
+  width: 100%;
+	margin: 15px auto;
 }
 
-.headerJob {
-  font-size: 14px;
-  color: $grey-dark;
-  margin: 0;
+.header-link {
+  height: 25px;
+  margin: 0 10px;
+  color: $black;
 }
 
-.linkListContainer {
-  color: $grey-dark;
-  float: right;
-  margin-top: 18px;
-  padding: 0;
-}
+main {z-index: 3;}
 
-.linkList {
-  float: right;
-  display: inline-flex;
-  padding: 0;
-}
-
-.links {
-  height: 30px;
-  font-size: 18px;
+nav ul {
+  display: flex;
   list-style: none;
-  margin: 0 40px 10px 0; 
 }
 
-.headerSectionSeparator {
-  border-bottom: 1px solid $grey-light;
-	width: 100%;
-	margin-top: 60px;
+nav input,
+nav label {
+	display: none;
+	width: 36px;
+	height: 36px;
+	color: $gold;
+	text-align: center;
+	line-height: 36px;
+	font-size: 1.6rem;
+	border-radius: 2px;
 }
+
+nav label {
+  position: absolute;
+  top: -7px;
+  transition: .4s;
+}
+
+nav label:hover {cursor:pointer;}
+
+nav label:before {
+	font-family: FontAwesome;
+	font-size: 24px;
+	content: "\f0c9";
+	text-align: center;
+}
+
+.is-selected {color: $gold;}
