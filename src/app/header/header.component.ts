@@ -12,29 +12,29 @@ import * as $ from 'jquery';
 
 export class HeaderComponent implements OnInit {
 
-  constructor(private translate: TranslateService, private dataService: DataService) { }
+  constructor(private translate: TranslateService, private dataService: DataService) {}
 
   ngOnInit() {
     const sections = $('.section')
-    , nav = $('.nav')
+    , nav = $('.navigation')
     , nav_height = nav.outerHeight();
 
-  $(window).on('scroll', function () {
-    const cur_pos = $(this).scrollTop();
+    $(window).on('scroll', function () {
+      const cur_pos = $(this).scrollTop();
 
-    sections.each(function() {
-      const top = $(this).offset().top - nav_height,
-          bottom = top + $(this).outerHeight();
+      sections.each(function() {
+        const top = $(this).offset().top - nav_height,
+              bottom = top + $(this).outerHeight();
 
-      if (cur_pos >= top && cur_pos <= bottom) {
-        nav.find('a').removeClass('is-selected');
-        sections.removeClass('is-selected');
+        if (cur_pos >= top && cur_pos <= bottom) {
+          nav.find('a').removeClass('is-selected');
+          sections.removeClass('is-selected');
 
-        $(this).addClass('is-selected');
-        nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('is-selected');
-      }
+          $(this).addClass('is-selected');
+          nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('is-selected');
+        }
+      });
     });
-  });
   }
 
   highlightAbout() {

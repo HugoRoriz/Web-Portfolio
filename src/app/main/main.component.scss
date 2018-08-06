@@ -50,7 +50,13 @@
   font-size: 26px;
   font-weight: normal;
   font-style: italic;
-  margin: 175px 0 50px 0;
+  margin: 175px 0 20px 0;
+}
+
+.quote-author {
+  font-size: 26px;
+  font-weight: normal;
+  font-style: italic;
 }
 
 #timeline {height: 1178px;}
@@ -99,17 +105,23 @@
 
 .timeline-card-content {margin: 9% 6%;}
 
+.timeline-location {a {color: $black;}}
+
 .left-card-thumbnail {float: right;}
 
 .left-card-content {
   float: right;
   text-align: right;
-  margin: 5%;
+  margin: 6%;
 }
 
 .projects-container {padding-top: 50px;}
 
-.in-dev {height: 300px; text-align: center; font-size: 26px;}
+.in-dev {
+  height: 300px;
+  text-align: center;
+  font-size: 26px;
+}
 
 .project-profiles-container {
   height: 250px;
@@ -121,24 +133,31 @@
   width: 50%;
 	float: left;
 	text-align: center;
-	height: 50px;
+  height: 50px;
+  a {color: $black;}
 }
 
 .project-profiles-codepen {
   width: 50%;
 	float: right;
 	text-align: center;
-	height: 50px;
+  height: 50px;
+  a {color: $black;}
 }
 
-.icon {font-size: 85px;}
+.icon {
+  font-size: 85px;
+  color: $black;
+}
 
-.profile-links {
+.profile-links,
+.personal-links {
   font-size: 22px;
   text-align: center;
   font-style: italic;
   text-decoration: underline;
   margin: 40px;
+  a {color: $black;}
 }
 
 #contacts {height: 1250px;}
@@ -152,7 +171,7 @@
 }
 
 .social-boxes {
-  width: 800px;
+  width: 80%;
 	display: flex;
 	margin: 200px auto 0 auto;
 }
@@ -176,7 +195,10 @@
 
 .resume-pt,
 .resume-en {
-  a p {font-size: 22px;}
+  a p {
+    font-size: 22px;
+    color: $black;
+  }
 }
 
 .thanks {padding: 50px 0 75px 0;}

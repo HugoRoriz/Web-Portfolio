@@ -10,8 +10,8 @@ import { DataService } from '../data.service';
 })
 export class MainComponent implements OnInit {
 
-  constructor(private translate: TranslateService, private dataService: DataService) { }
+  constructor(private translate: TranslateService, private dataService: DataService) {}
 
-  ngOnInit() { }
+  ngOnInit() {}
 
 }

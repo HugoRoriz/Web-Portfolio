@@ -20,6 +20,8 @@ import { MainComponent } from './main/main.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
+// SERVICES
+
 import { DataService } from './data.service';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -52,6 +54,6 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   bootstrap: [ AppComponent ]
 })
 
-export class AppModule { }
+export class AppModule {}
 
-export class AppBootstrapModule { }
+export class AppBootstrapModule {}

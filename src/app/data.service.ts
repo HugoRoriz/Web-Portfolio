@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 
 export class DataService {
 
-  constructor() { }
+  constructor() {}
 
   language: String = 'en';
 

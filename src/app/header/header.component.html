@@ -1,16 +1,18 @@
-<div id="headerPage" class="header container">
+<div id="header" class="header container">
   <div class="lang-select-container">
     <select id="langSelect" #langSelect (change)="translate.use(langSelect.value)">
       <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
     </select>
   </div>
-  <div class="nav-container">
-    <ul class="nav">
+  <nav class="nav-container">
+    <input type="checkbox" id="menu" name="menu">
+    <ul class="main navigation">
       <li class="no-flicker animation-hover-flipInX" (click)="highlightAbout();"><a class="header-link" id="aboutLink" href="#about">{{ 'HEADER.ABOUT' | translate }}</a></li>
       <li class="no-flicker animation-hover-flipInX" (click)="highlightTimeline();"><a class="header-link" id="timelineLink" href="#timeline">{{ 'HEADER.TIMELINE' | translate }}</a></li>
       <li class="no-flicker animation-hover-flipInX" (click)="highlightProjects();"><a class="header-link" id="projectsLink" href="#projects">{{ 'HEADER.PROJECTS' | translate }}</a></li>
       <li class="no-flicker animation-hover-flipInX" (click)="highlightResume();"><a class="header-link" id="resumeLink" href="#resume">{{ 'HEADER.RESUME' | translate }}</a></li>
       <li class="no-flicker animation-hover-flipInX" (click)="highlightContacts();"><a class="header-link" id="contactsLink" href="#contacts">{{ 'HEADER.CONTACTS' | translate }}</a></li>
     </ul>
-  </div>
+    <label for="menu" id="menu"></label>
+  </nav>
 </div>

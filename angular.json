@@ -18,13 +18,14 @@
             "polyfills": "src/polyfills.ts",
             "assets": [
               "src/assets",
-              "src/favicon.ico",
-              "src/i18n"
+              "src/assets/i18n"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/font-awesome/scss/font-awesome.scss",
-              "src/styles.scss"
+              "src/stylesheets/reset.scss",
+              "src/styles.scss",
+              "src/stylesheets/mediaqueries.scss"
             ],
             "scripts": [
               "node_modules/popper.js/dist/umd/popper.js",

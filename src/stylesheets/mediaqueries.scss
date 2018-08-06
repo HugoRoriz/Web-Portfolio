@@ -1,0 +1,205 @@
+@import './variables.scss';
+
+// 1200px plus
+
+@media only screen and (min-width: 1200px) {.nav-container{width: 33% !important;}}
+
+// 992px - 1200px
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .nav-container {width: 41% !important;}
+
+  .profile-links {margin: 15px !important;}
+}
+
+// 768px - 991px
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .nav-container {width: 56% !important;}
+
+  .section-text {
+    width: 80%;
+    margin: auto;
+  }
+
+  .quote {
+    width: 80%;
+    margin: 175px auto 50px auto !important;
+  }
+
+  .project-profiles-container {width: 80% !important;}
+
+  .social-boxes {width: 100% !important;}
+
+  .socials {width: 13% !important;}
+}
+
+// 576px - 767px
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .hamburguer {display: initial !important;}
+
+  .lang-select-container {left: 40%;}
+
+  .timeline-card-thumbnail {margin: 50px 6% 0 6% !important;}
+
+  .left-card-content {margin: 9% 6% !important;}
+
+  .project-profiles-container {width: 100% !important;}
+
+  .icon {font-size: 60px !important;}
+}
+
+// 480px - 575px
+
+@media only screen and (min-width: 480px) and (max-width: 575px) {
+  .hamburguer {display: initial !important;}
+
+  .lang-select-container {left: 40%;}
+
+  .timeline-card-thumbnail {margin: 100px 6% 0 6% !important;}
+
+  .timeline-icon {top: 200px !important;}
+
+  .project-profiles-container {width: 100% !important;}
+
+  .icon {font-size: 50px !important;}
+
+  .profile-links {margin: 15px !important;}
+}
+
+// 400px - 479px
+
+@media only screen and (min-width: 400px) and (max-width: 479px) {
+  .hamburguer {display: initial !important;}
+
+  .lang-select-container {left: 38%;}
+
+  .timeline-card-thumbnail {margin: 100px 10% 0 10% !important;}
+
+  .timeline-card-content {margin: 9% 10% !important;}
+
+  .timeline-course {
+    font-size: 20px !important;
+    margin-top: 20px !important;
+  }
+
+  .timeline-icon {top: 200px !important;}
+
+  .project-profiles-container {width: 100% !important;}
+
+  .social-boxes {width: 100% !important;}
+
+  .socials {width: 13% !important;}
+
+  .icon {font-size: 55px !important;}
+
+  .profile-links {
+    font-size: 18px !important;
+    margin: 15px !important;
+  }
+}
+
+// 320px - 399px
+
+@media only screen and (min-width: 320px) and (max-width: 399px) {
+  .hamburguer {display: initial !important;}
+
+  .lang-select-container {left: 34%;}
+
+  .timeline-card-thumbnail {margin: 100px 10% 0 10% !important;}
+
+  .timeline-card-content {margin: 9% 10% !important;}
+
+  .timeline-course {
+    font-size: 20px !important;
+    margin-top: 20px !important;
+  }
+
+  .timeline-location {margin-top: 20px;}
+
+  .timeline-icon {top: 200px !important;}
+
+  .project-profiles-container {width: 100% !important;}
+
+  .profile-links {
+    font-size: 14px !important;
+	  margin: 8px !important;
+  }
+
+  .personal-links {margin: 15px !important;}
+
+  .social-boxes {width: 100% !important;}
+
+  .socials {width: 13% !important;}
+
+  .icon {font-size: 40px !important;}
+}
+
+// 0px - 768px (NAV)
+
+@media only screen and (min-width: 0px) and (max-width: 768px){
+  nav {position: relative;}
+
+  .header-link {
+    height: 50px !important;
+    margin: 0 !important;
+  }
+
+  nav ul {
+   flex-wrap: wrap;
+   max-width: 1080px;
+   margin: 0 auto;
+   background: $grey;
+  }
+
+  nav ul,
+  nav li {flex: 1;}
+
+  nav a {
+    text-decoration: none;
+    display: block;
+  }
+
+  nav a:hover {
+    background: #adacac;
+    color: white;
+  }
+
+  nav li:nth-child(1) {margin-top: 75px;}
+
+  nav li {
+    position: relative;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+  }
+
+  nav ul {
+    transform: translateY(0);
+    box-shadow: 0 0 5px rgba(0,0,0, .7);
+    transition: all .5s;
+    position: absolute;
+    margin-top: -19px;
+    width: 100%;
+  }
+
+  nav li {
+    flex: none;
+    width: 100%;
+  }
+
+  nav input[type="checkbox"]:checked + ul  {
+    transform: translateY(-100%);
+    width: 100%;
+    background: #adacac;
+    transition: all .5s;
+  }
+
+  nav label {display: block !important;}
+
+  nav input[type="checkbox"]:checked + ul li:nth-child(1){
+    background: #adacac;
+    color: #fff;
+  }
+}
