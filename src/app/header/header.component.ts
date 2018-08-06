@@ -12,7 +12,7 @@ import * as $ from 'jquery';
 
 export class HeaderComponent implements OnInit {
 
-  constructor(private translate: TranslateService, private dataService: DataService) {}
+  constructor(public translate: TranslateService, private dataService: DataService) {}
 
   ngOnInit() {
     const sections = $('.section')
