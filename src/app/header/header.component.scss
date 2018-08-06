@@ -11,6 +11,8 @@
   background-image: url("/assets/concrete_seamless.png");
 }
 
+.header-menu-border {border-top: 1px solid $blue;}
+
 .lang-select-container {
   width: 115px;
 	height: 30px;
@@ -19,7 +21,7 @@
 	top: 10px;
 	padding: 0 10px;
 	background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 89% 0;
-	background-color: $gold;
+	background-color: $blue;
 	overflow: hidden;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -31,7 +33,7 @@
     border: none;
     font-size: 12px;
     padding: 8px 0;
-    color: white;
+    color: $white;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -61,7 +63,7 @@ nav label {
 	display: none;
 	width: 36px;
 	height: 36px;
-	color: $gold;
+	color: $blue;
 	text-align: center;
 	line-height: 36px;
 	font-size: 1.6rem;
@@ -83,4 +85,4 @@ nav label:before {
 	text-align: center;
 }
 
-.is-selected {color: $gold;}
+.is-selected {color: $beige;}

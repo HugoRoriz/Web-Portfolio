@@ -67,37 +67,37 @@
 
 .timeline-card-left {
   width: 50%;
-  height: 300px;
+  height: 350px;
   float: left;
-  border-right: 1px solid $gold;
+  border-right: 1px solid $beige;
   list-style: none;
 }
 
 .timeline-card-right {
   width: 50%;
-  height: 300px;
+  height: 350px;
   float: right;
-  border-left: 2px solid $gold;
+  border-left: 2px solid $beige;
   list-style: none;
 }
 
 .timeline-icon {
   -webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
-	background-color: white;
+	background-color: $light-grey;
 	display: block;
 	height: 15px;
 	position: relative;
 	width: 15px;
 	top: 150px;
 	right: 9px;
-	border: 2px solid $gold;
+	border: 2px solid $beige;
 }
 
 .timeline-card-thumbnail {
 	width: 100px;
-  background: $gold;
-  color: white;
+  background: $beige;
+  color: $white;
   text-align: center;
   margin: 6%;
   padding: 4px;
@@ -105,7 +105,7 @@
 
 .timeline-card-content {margin: 9% 6%;}
 
-.timeline-location {a {color: $black;}}
+.timeline-location {a {color: $grey;}}
 
 .left-card-thumbnail {float: right;}
 
@@ -115,7 +115,7 @@
   margin: 6%;
 }
 
-.projects-container {padding-top: 50px;}
+.projects-container {padding-top: 350px;}
 
 .in-dev {
   height: 300px;
@@ -134,7 +134,7 @@
 	float: left;
 	text-align: center;
   height: 50px;
-  a {color: $black;}
+  a {color: $grey;}
 }
 
 .project-profiles-codepen {
@@ -142,12 +142,12 @@
 	float: right;
 	text-align: center;
   height: 50px;
-  a {color: $black;}
+  a {color: $grey;}
 }
 
 .icon {
   font-size: 85px;
-  color: $black;
+  color: $grey;
 }
 
 .profile-links,
@@ -157,7 +157,7 @@
   font-style: italic;
   text-decoration: underline;
   margin: 40px;
-  a {color: $black;}
+  a {color: $grey;}
 }
 
 #contacts {height: 1250px;}
@@ -197,7 +197,7 @@
 .resume-en {
   a p {
     font-size: 22px;
-    color: $black;
+    color: $grey;
   }
 }
 
