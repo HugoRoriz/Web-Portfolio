@@ -19,13 +19,15 @@
 
   .section-text {
     width: 80%;
-    margin: auto;
+    margin: auto !important;
   }
 
   .quote {
     width: 80%;
     margin: 175px auto 50px auto !important;
   }
+
+  .project-content-preview {width: 50% !important;}
 
   .project-profiles-container {width: 80% !important;}
 
@@ -45,6 +47,8 @@
 
   .left-card-content {margin: 9% 6% !important;}
 
+  .project-content-preview {width: 60% !important;}
+
   .project-profiles-container {width: 100% !important;}
 
   .icon {font-size: 60px !important;}
@@ -60,6 +64,8 @@
   .timeline-card-thumbnail {margin: 100px 6% 0 6% !important;}
 
   .timeline-icon {top: 200px !important;}
+
+  .project-content-preview {width: 80% !important;}
 
   .project-profiles-container {width: 100% !important;}
 
@@ -85,6 +91,8 @@
   }
 
   .timeline-icon {top: 200px !important;}
+
+  .project-content-preview {width: 80% !important;}
 
   .project-profiles-container {width: 100% !important;}
 
@@ -119,6 +127,8 @@
   .timeline-location {margin-top: 20px;}
 
   .timeline-icon {top: 200px !important;}
+
+  .project-content-preview {width: 80% !important;}
 
   .project-profiles-container {width: 100% !important;}
 
