@@ -117,6 +117,23 @@
 
 .projects-container {padding-top: 350px;}
 
+.project-section {
+  width: 100%;
+  height: 550px;
+}
+
+.project-content-preview {
+  background-image: url("/assets/ZU_screenshot.png");
+  background-size: 100% 100%;
+  width: 31%;
+  height: 200px;
+  margin: auto;
+  border: 1px solid $grey;
+	border-radius: 5px;
+}
+
+.project-text {margin: 30px 0;}
+
 .in-dev {
   height: 300px;
   text-align: center;
