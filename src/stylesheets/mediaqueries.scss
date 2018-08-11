@@ -14,7 +14,7 @@
 
 // 768px - 991px
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 769px) and (max-width: 991px) {
   .nav-container {width: 56% !important;}
 
   .section-text {
@@ -38,7 +38,7 @@
 
 // 576px - 767px
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 768px) {
   .hamburguer {display: initial !important;}
 
   .lang-select-container {left: 40%;}
@@ -149,6 +149,23 @@
 // 0px - 768px (NAV)
 
 @media only screen and (min-width: 0px) and (max-width: 768px){
+
+  .no-flicker {
+    -webkit-transform-style: none !important;
+    -moz-transform-style: none !important;
+    -ms-transform-style: none !important;
+    -o-transform-style: none !important;
+    transform-style: none !important;
+  }
+
+  .animation-hover-flipInX:hover {
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -ms-animation: none !important;
+    -o-animation: none !important;
+    animation: none !important;
+  }
+
   nav {position: relative;}
 
   .header-link {

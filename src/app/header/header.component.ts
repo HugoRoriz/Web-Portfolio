@@ -35,6 +35,10 @@ export class HeaderComponent implements OnInit {
         }
       });
     });
+
+    $('#aboutLink, #timelineLink, #projectsLink, #contactsLink, #resumeLink').click(function(e) {
+      $('#menu').prop('checked', false);
+    });
   }
 
   highlightAbout() {
