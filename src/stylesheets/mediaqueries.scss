@@ -14,7 +14,7 @@
 
 // 768px - 991px
 
-@media only screen and (min-width: 769px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .nav-container {width: 56% !important;}
 
   .section-text {
@@ -38,7 +38,7 @@
 
 // 576px - 767px
 
-@media only screen and (min-width: 576px) and (max-width: 768px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   .hamburguer {display: initial !important;}
 
   .lang-select-container {left: 40%;}
@@ -120,7 +120,7 @@
   .timeline-card-content {margin: 9% 10% !important;}
 
   .timeline-course {
-    font-size: 20px !important;
+    font-size: 17px !important;
     margin-top: 20px !important;
   }
 
@@ -148,7 +148,7 @@
 
 // 0px - 768px (NAV)
 
-@media only screen and (min-width: 0px) and (max-width: 768px){
+@media only screen and (min-width: 0px) and (max-width: 768px) {
 
   .no-flicker {
     -webkit-transform-style: none !important;

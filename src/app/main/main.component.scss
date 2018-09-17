@@ -5,7 +5,10 @@
   overflow: auto;
 }
 
-.main {font-family: $font;}
+.main {
+  font-family: $font;
+  padding: 0 !important;
+}
 
 .welcome-container {
   height: 80vh;
@@ -59,7 +62,7 @@
   font-style: italic;
 }
 
-#timeline {height: 1178px;}
+#timeline {height: 1578px;}
 
 .timeline-title {margin-bottom: 150px;}
 
@@ -114,8 +117,6 @@
   text-align: right;
   margin: 6%;
 }
-
-.projects-container {padding-top: 350px;}
 
 .project-section {
   width: 100%;
